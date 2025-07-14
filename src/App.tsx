@@ -1,16 +1,19 @@
-import { Button, Container, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 import Footer from "./components/Footer";
 
 function App() {
+    const { t } = useTranslation();
+
     return (
-        <div className="min-h-screen flex flex-col justify-between">
+        <div className="min-h-screen flex flex-col justify-between relative">
+            <LanguageSwitcher />
+
             <Container className="pt-8">
                 <Typography variant="h4" gutterBottom>
-                    Hello Material UI 👋
+                    {t('title')}
                 </Typography>
-                <Button variant="contained" color="primary">
-                    Click me
-                </Button>
             </Container>
 
             <Footer />
