@@ -1,21 +1,14 @@
-import { Container, Typography } from "@mui/material";
-import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "./components/LanguageSwitcher";
+import Header from "./components/Header";
+import IntroSection from "./components/IntroSection";
 import Footer from "./components/Footer";
 
 function App() {
-    const { t } = useTranslation();
-
     return (
-        <div className="min-h-screen flex flex-col justify-between relative">
-            <LanguageSwitcher />
-
-            <Container className="pt-8">
-                <Typography variant="h4" gutterBottom>
-                    {t('title')}
-                </Typography>
-            </Container>
-
+        <div className="min-h-screen flex flex-col bg-[#292727] text-white">
+            <Header />
+            <main className="flex-grow">
+                <IntroSection />
+            </main>
             <Footer />
         </div>
     );
