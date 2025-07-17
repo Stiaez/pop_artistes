@@ -64,13 +64,13 @@ export default function DownloadForm() {
     };
 
     return (
-        <Box component="form" onSubmit={handleSubmit} className="w-full max-w-md mx-auto mt-10 flex flex-col gap-5">
+        <Box component="form" onSubmit={handleSubmit} className="w-full max-w-md mx-auto mt-10 flex flex-col">
 
-            <Typography variant="h5" className="text-black font-semibold">
+            <Typography variant="h5" className="text-black font-semibold text-center" sx={{fontFamily: 'Rockwell, serif', mb: 4 }}>
                 {t('formTitle')}
             </Typography>
 
-            <Typography className="font-bold text-black">{t('lastName')} *</Typography>
+            <Typography className="font-bold text-black text-center" sx={{fontFamily: 'Rockwell, serif'}} >{t('lastName')} *</Typography>
             <TextField
                 placeholder={t('lastName')}
                 name="lastName"
@@ -79,10 +79,10 @@ export default function DownloadForm() {
                 required
                 fullWidth
                 size="small"
-                sx={{ backgroundColor: 'white' }}
+                sx={{ backgroundColor: 'white', mt: 1, mb: 2 }}
             />
 
-            <Typography className="font-bold text-black">{t('firstName')} *</Typography>
+            <Typography className="font-bold text-black text-center"  sx={{fontFamily: 'Rockwell, serif'}} >{t('firstName')} *</Typography>
             <TextField
                 placeholder={t('firstName')}
                 name="firstName"
@@ -91,11 +91,11 @@ export default function DownloadForm() {
                 required
                 fullWidth
                 size="small"
-                sx={{ backgroundColor: 'white' }}
+                sx={{ backgroundColor: 'white', mt: 1, mb: 2 }}
             />
 
-            <Typography className="font-bold text-black">{t('profession')} *</Typography>
-            <FormControl required fullWidth size="small" sx={{ backgroundColor: 'white' }}>
+            <Typography className="font-bold text-black text-center"  sx={{fontFamily: 'Rockwell, serif'}} >{t('profession')} *</Typography>
+            <FormControl required fullWidth size="small"  sx={{ backgroundColor: 'white', mt: 1, mb: 2 }}>
                 <Select
                     name="profession"
                     value={formData.profession}
@@ -110,7 +110,7 @@ export default function DownloadForm() {
                 </Select>
             </FormControl>
 
-            <Typography className="font-bold text-black">{t('email')} *</Typography>
+            <Typography className="font-bold text-black text-center"  sx={{fontFamily: 'Rockwell, serif'}} >{t('email')}*</Typography>
             <TextField
                 placeholder={t('email')}
                 name="email"
@@ -120,7 +120,7 @@ export default function DownloadForm() {
                 required
                 fullWidth
                 size="small"
-                sx={{ backgroundColor: 'white' }}
+                sx={{backgroundColor: 'white', mt: 1, mb: 2 }}
             />
 
             <Button

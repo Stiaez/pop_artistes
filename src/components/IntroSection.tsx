@@ -78,7 +78,7 @@ export default function IntroSection() {
                     </MotionTypography>
                 </div>
 
-                <div className="mt-6">
+                <div className="mt-10">
                     <MotionTypography
                         className="text-bold text-center"
                         initial={{ opacity: 0 }}
@@ -89,7 +89,7 @@ export default function IntroSection() {
                     </MotionTypography>
                 </div>
 
-                <div className="mt-4">
+                <div className="mt-10">
                     <MotionTypography
                         className="text"
                         initial={{ opacity: 0 }}
