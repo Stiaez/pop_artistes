@@ -25,15 +25,7 @@ export default function IntroSection() {
 
     return (
         <section className="min-h-screen grid grid-cols-1 md:grid-cols-2">
-            <div className="md:hidden w-full">
-                <img
-                    src={`/white_paper/white_paper_${mobileImageIndex}.jpg`}
-                    alt={`White Paper Mobile ${mobileImageIndex}`}
-                    className="object-contain w-full"
-                />
-            </div>
-
-            <div className="relative md:sticky top-0 h-screen hidden md:flex flex-col overflow-y-auto">
+            <div className="relative md:sticky top-0 h-screen hidden md:flex flex-col justify-center items-center">
                 <img
                     src="/white_paper/cover_page.jpg"
                     alt="White Paper Cover"
@@ -47,6 +39,13 @@ export default function IntroSection() {
             </div>
 
             <div className="overflow-y-auto px-6 py-10 text-black max-h-screen">
+                <div className="md:hidden w-full">
+                    <img
+                        src={`/white_paper/white_paper_${mobileImageIndex}.jpg`}
+                        alt={`White Paper Mobile ${mobileImageIndex}`}
+                        className="object-contain w-full"
+                    />
+                </div>
                 <MotionTypography
                     className="title mb-10 text-center"
                     initial={{ opacity: 0 }}
