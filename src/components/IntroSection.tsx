@@ -18,7 +18,7 @@ export default function IntroSection() {
         const interval = setInterval(() => {
             setMobileImageIndex((prev) => (prev % 3) + 1);
             setDesktopImageIndex((prev) => (prev % 3) + 1);
-        }, 5000);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, []);
@@ -33,7 +33,7 @@ export default function IntroSection() {
                 />
             </div>
 
-            <div className="relative md:sticky top-0 h-screen hidden md:flex flex-col bg-[#292727] overflow-y-auto">
+            <div className="relative md:sticky top-0 h-screen hidden md:flex flex-col overflow-y-auto">
                 <img
                     src="/white_paper/cover_page.jpg"
                     alt="White Paper Cover"
@@ -46,9 +46,9 @@ export default function IntroSection() {
                 />
             </div>
 
-            <div className="overflow-y-auto px-6 py-10 text-white max-h-screen text-center">
+            <div className="overflow-y-auto px-6 py-10 text-black max-h-screen">
                 <MotionTypography
-                    className="title mb-10"
+                    className="title mb-10 text-center"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.2 }}
@@ -80,7 +80,7 @@ export default function IntroSection() {
 
                 <div className="mt-6">
                     <MotionTypography
-                        className="text-bold"
+                        className="text-bold text-center"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.8 }}

@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 function App() {
     return (
-        <div className="min-h-screen flex flex-col bg-[#292727] text-white">
+        <div className="min-h-screen flex flex-col bg-[#FFFFFF]">
             <Header />
             <main className="flex-grow">
                 <IntroSection />

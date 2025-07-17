@@ -66,11 +66,11 @@ export default function DownloadForm() {
     return (
         <Box component="form" onSubmit={handleSubmit} className="w-full max-w-md mx-auto mt-10 flex flex-col gap-5">
 
-            <Typography variant="h5" className="text-white font-semibold">
+            <Typography variant="h5" className="text-black font-semibold">
                 {t('formTitle')}
             </Typography>
 
-            <Typography className="font-bold text-white">{t('lastName')} *</Typography>
+            <Typography className="font-bold text-black">{t('lastName')} *</Typography>
             <TextField
                 placeholder={t('lastName')}
                 name="lastName"
@@ -82,7 +82,7 @@ export default function DownloadForm() {
                 sx={{ backgroundColor: 'white' }}
             />
 
-            <Typography className="font-bold text-white">{t('firstName')} *</Typography>
+            <Typography className="font-bold text-black">{t('firstName')} *</Typography>
             <TextField
                 placeholder={t('firstName')}
                 name="firstName"
@@ -94,7 +94,7 @@ export default function DownloadForm() {
                 sx={{ backgroundColor: 'white' }}
             />
 
-            <Typography className="font-bold text-white">{t('profession')} *</Typography>
+            <Typography className="font-bold text-black">{t('profession')} *</Typography>
             <FormControl required fullWidth size="small" sx={{ backgroundColor: 'white' }}>
                 <Select
                     name="profession"
@@ -110,7 +110,7 @@ export default function DownloadForm() {
                 </Select>
             </FormControl>
 
-            <Typography className="font-bold text-white">{t('email')} *</Typography>
+            <Typography className="font-bold text-black">{t('email')} *</Typography>
             <TextField
                 placeholder={t('email')}
                 name="email"
@@ -126,7 +126,7 @@ export default function DownloadForm() {
             <Button
                 type="submit"
                 variant="contained"
-                className="bg-black text-white hover:bg-gray-800"
+                className="bg-black text-black hover:bg-gray-800"
             >
                 {t('download')}
             </Button>
