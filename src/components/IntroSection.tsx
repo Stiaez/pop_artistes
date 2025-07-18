@@ -46,6 +46,7 @@ export default function IntroSection() {
                         className="object-contain w-full"
                     />
                 </div>
+                <br/>
                 <MotionTypography
                     className="title mb-10 text-center"
                     initial={{ opacity: 0 }}
@@ -88,7 +89,7 @@ export default function IntroSection() {
                     </MotionTypography>
                 </div>
 
-                <div className="mt-10">
+                <div className="mt-20">
                     <MotionTypography
                         className="text"
                         initial={{ opacity: 0 }}
