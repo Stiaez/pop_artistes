@@ -49,7 +49,7 @@ export default function DownloadForm() {
 
             if (response.ok) {
                 const link = document.createElement('a');
-                link.href = i18n.language === 'fr' ? '/white_paper/pdf/lb_dancing_fr.pdf' : '/white_paper/pdf/lb_dancing_en.pdf';
+                link.href = i18n.language === 'fr' ? '/white_paper/pdf/wp_dancing_fr.pdf' : '/white_paper/pdf/wp_dancing_en.pdf';
                 link.download = i18n.language === 'fr' ? 'LivreBlanc.pdf' : 'WhiteBook.pdf';
                 document.body.appendChild(link);
                 link.click();
