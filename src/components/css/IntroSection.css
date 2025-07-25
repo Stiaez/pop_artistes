@@ -8,6 +8,7 @@
 .text {
     font-size: 1.2rem !important;
     color: #373737 !important;
+    text-align: justify !important;
     font-family: 'Rockwell', serif !important;
 }
 
