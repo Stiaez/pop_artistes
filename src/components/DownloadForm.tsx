@@ -34,7 +34,7 @@ export default function DownloadForm() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        const formUrl = 'https://formsubmit.co/ajax/doniameunier16@gmail.com?cc=stiaez72@gmail.com';
+        const formUrl = 'https://formsubmit.co/ajax/doniameunier16@gmail.com';
         const payload = { ...formData };
 
         try {
